@@ -1,7 +1,7 @@
 
 int main() {
     FILE *file;
-    file = fopen("filename.txt", "r+"); // Open the file for reading and writing
+    file = fopen("filename.txt", "r+"); // 
 
     if (file == NULL) {
         perror("Error opening the file");
@@ -9,11 +9,11 @@ int main() {
     }
 
     for (int i = 0; i < 32; i++) {
-        fseek(file, 0, SEEK_SET); // Move the file pointer to the beginning
-        fprintf(file, "Hello, School\n"); // Write "Hello, School" to the file 32 times
+        fseek(file, 0, SEEK_SET); // 
+        fprintf(file, "Hello, School\n"); // 
     }
 
-    fclose(file); // Close the file
+    fclose(file); // 
 
     return 0;
 }
